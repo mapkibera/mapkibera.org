@@ -1,6 +1,4 @@
 {% for item in page.links %}
-  {% if item.section == include.section %}
     {% capture full_link %}/{{ item.section }}/{{ item.link }}{% endcapture %}
     <a id="footer-{{ item.section }}-{item.link}}" href="{{site.baseurl}}/{{item.section}}/{{item.link}}">{{item.title}}</a>
-  {% endif %}
 {% endfor %}
