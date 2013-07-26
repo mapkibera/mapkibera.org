@@ -1,5 +1,5 @@
 ---
-title: 'This is my Site Title'
+title: 'Map Kibera'
 ---
 <!DOCTYPE html>
 <html>
@@ -10,22 +10,25 @@ title: 'This is my Site Title'
   <link rel='alternate' type='application/rss+xml' title='RSS' href='SITEURLGOESHERE/blog.rss' />
   <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
   <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+  <script src='{{site.baseurl}}/site.js'></script>
 </head>
+
 <body>
   <div class='container'>
-    <div class='col12 clearfix'>
-      <div class='header col6 margin3 pad4h'>
-        <div class='clearfix col12'>
-          <div class='menu fr'>
-            <a class='{% if page.section == "blog" %}active{% endif %}' href='{{site.baseurl}}/'>Blog</a>
-            <a class='{% if page.url == "about/" %}active{% endif %}' href='{{site.baseurl}}/about'>About</a>
-            <a href='//github.com/prose/starter'>Fork on GitHub</a>
-          </div>
-          <h1 class='title'><a href='{{site.baseurl}}/'>{{page.title}}</a></h1>
-        </div>
-      </div>
+
+    {% if page.slideshow %}
+    <div id='header' class='header slideshow'>
+      {% include slideshow.html %}
     </div>
+    {% else %}
+    <div id='header' class='header'>
+      {% include header.html %}
+    </div>
+    {% endif %}
+
     {{content}}
+
+    {% include footer.html %}
   </div>
-  <script src='{{site.baseurl}}/site.js'></script>
 </body>
+</html>

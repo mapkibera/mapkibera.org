@@ -1,0 +1,24 @@
+<a href='#' id='toggle' class='icon toggle'>Toggle Nav</a>
+<a href='#prev' class='slide-control prev'>
+  <span href='#previous' class='icon prev'>Previous</span>
+</a>
+<a href='#next' class='slide-control next'>
+  <span href='#next' class='icon next'>Next</span>
+</a>
+{% for item in page.slideshow %}
+<div class='slide {% if item.nocover %}no-cover {% endif %} {% if forloop.first %}active {% endif %} slide-{{forloop.index}}' data-index='slide-{{forloop.index}}' style='background-image:url("{{site.baseurl}}/img/banners/{{item.slide}}");'>
+  <div class='dot-matrix'></div>
+  {% include header.html %}
+  <div class='limiter'>
+    <div class='title-block'>
+       <h2>{{item.title}}</h2>
+        <p class='subtitle'>{{item.subtitle}}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
+<script>
+  $(function() {
+    mapkibera.slideShow($('.header'));
+  });
+</script>
