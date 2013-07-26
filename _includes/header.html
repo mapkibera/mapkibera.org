@@ -4,9 +4,9 @@
       <a href='#' id='toggle' class='icon toggle'>Toggle Nav</a>
     {% endunless %}
     <div class='nav clearfix'>
-      <a href='{{site.baseurl}}/our-work' {% if page.url == "{{site.baseurl}}/our-work" %}class='active'{% endif %}>Our Work</a>
-      <a href='{{site.baseurl}}/themes' {% if page.url == "{{site.baseurl}}/themes" %}class='active'{% endif %}>Themes</a>
-      <a href='{{site.baseurl}}/about' {% if page.url == "{{site.baseurl}}/about" %}class='active'{% endif %}>About</a>
+      <a href='{{site.baseurl}}/work' {% if page.permalink contains "/work" %}class='active'{% endif %}>Our Work</a>
+      <a href='{{site.baseurl}}/theme' {% if page.permalink contains '/theme' %}class='active'{% endif %}>Themes</a>
+      <a href='{{site.baseurl}}/about' {% if page.permalink contains "/about" %}class='active'{% endif %}>About</a>
     </div>
     <a href='{{site.baseurl}}/' class='title logo'></a>
   </div>
