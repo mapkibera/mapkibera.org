@@ -1,5 +1,5 @@
 ---
-title: 'Map Kibera'
+site-title: 'Map Kibera'
 section-count:
   - section: about
     count: 5
@@ -7,63 +7,25 @@ section-count:
     count: 5
   - section: work
     count: 5
-links:
-  - section: about
-    link: members
-    title: Members
-  - section: about
-    link: staff-board
-    title: Staff/Board
-  - section: about
-    link: partners
-    title: Partners
-  - section: about
-    link: volunteers
-    title: Volunteers
-  - section: about
-    link: media
-    title: Media
-  - section: theme
-    link: security
-    title: Security
-  - section: theme
-    link: watsan
-    title: Water/Sanitation
-  - section: theme
-    link: health
-    title: Health
-  - section: theme
-    link: education
-    title: Education
-  - section: theme
-    link: elections
-    title: Elections
-  - section: work
-    link: methods
-    title: Methods
-  - section: work
-    link: locations
-    title: Locations
-  - section: work
-    link: tools
-    title: Tools
-  - section: work
-    link: with-us
-    title: Work With Us
-  - section: work
-    link: projects
-    title: Projects
 ---
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{% if page.url != '/index.html' %}| {{page.title}}{% endif %}</title>
+  <title>{% if page.url != '/index.html' %}{{page.site-title}} | {{page.title}}{% endif %}</title>
   <meta charset='UTF-8'/>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link rel='alternate' type='application/rss+xml' title='RSS' href='SITEURLGOESHERE/blog.rss' />
   <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
   <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
   <script src='{{site.baseurl}}/site.js'></script>
+  <script>
+    $(function() {
+      mapkibera.global();
+    });
+  </script>
+
 </head>
 
 <body>
@@ -79,7 +41,12 @@ links:
     </div>
     {% endif %}
     {% include subnav.html %}
+
     {{content}}
+
+    {% if page.map %}
+      {% include map.html %}
+    {% endif %}
 
     {% include footer.html %}
   </div>

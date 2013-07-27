@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class='listing col12 pad4h'>
+  <div class='limiter'>
+  {{content}}
+
+  {% for item in page.list %}
+    <div class="clearfix col12">
+      <div class='col5'><img class="people-photo" src="{{item.photo}}" /></div>
+      <div class='col7'><strong>{{ item.name }}</strong>
+      <br/>
+      {{ item.title }}
+      <br/>
+      <a href="http://twitter.com/{{ item.twitter}}">@{{ item.twitter }}</a>
+      <br/>
+      {{ item.bio }}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+

@@ -1,0 +1,10 @@
+<script>
+  $(function() {
+    var js_args;
+    {% for item in page.map %}
+      {% capture js_args %}{ {% for params in item %}'{{ params[0] }}':'{{ params[1] }}'{% if forloop.last %}{% else %},{% endif %}{% endfor %} }{%endcapture %}
+      js_args = {{js_args}};
+      mapkibera.map(js_args);
+    {% endfor %}
+  });
+</script>

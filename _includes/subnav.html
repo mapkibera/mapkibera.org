@@ -1,16 +1,19 @@
 <ul class='col12 pager-box pager-tour clearfix' id='nav'>
   {% capture col_class %}col2{% endcapture %}
   {% for item in page.section-count %}
-    {% if item.section == page.section %}
+    {% if item.section == page.category %}
       {% if item.count == 5 %}
         {% capture col_class %}col24{% endcapture %}
       {% endif %}
     {% endif %}
   {% endfor %}
-  {% for item in page.links %}
-    {% if item.section == page.section %}
-      {% capture full_link %}/{{ item.section }}/{{ item.link }}{% endcapture %}
-      <li><a class='{{col_class}} onpage {% if page.permalink == full_link %}active{% endif %}' id='nav-{{ item.link}}' href='{{site.baseurl}}/{{item.section}}/{{item.link}}'>{{ item.title }}</a></li>
+
+  {% for item in site.posts reversed %}
+    {% if item.category == page.category %}
+      {% capture index_link %}/{{page.category}}{% endcapture %}
+      {% if item.permalink != index_link %}
+        <li><a class='{{col_class}} onpage {% if page.permalink == item.permalink %}active{% endif %}' id='nav-{{ item.permalink}}' href='{{site.baseurl}}/{{item.permalink}}'>{{ item.title }}</a></li>
+      {% endif %}
     {% endif %}
   {% endfor %}
 </ul>
