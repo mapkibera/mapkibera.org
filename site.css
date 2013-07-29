@@ -131,7 +131,7 @@ p {
 
 /* Links */
 a {
-  color:#2099aa;
+  color:#0068ac;
   text-decoration:none;
   font-weight:bold;
   -webkit-transition:color 100ms;
@@ -600,7 +600,7 @@ input[type=submit] {
 input[type=button],
 input[type=submit] {
   text-align: center;
-  background-color:#3887be;
+  background-color:#0068ac;
   cursor:pointer;
   margin:0px 10px 0px 0px;
   }
@@ -774,14 +774,14 @@ input[type=button]:hover {
         background-color:rgba(0,0,0,0.25);
         opacity:1;
         }
-.dot-matrix {
+/*.dot-matrix {
   background:url(img/dot-matrix.png) repeat 0 0;
   width:100%;
   height:100%;
   position:absolute;
   top:0;left:0;
   z-index:1;
-  }
+  }*/
 
 /* HUH
 -------------------------------------------*/
@@ -822,18 +822,18 @@ input[type=button]:hover {
       color:#fff;
       }
       .header a.active {
-        color:#3B96CB;
+        color:#0068ac;
         }
 
     .interactive-heading .logo,
     .header .logo {
       top: 40px;
-      height: 74px;
+      height: 75px;
       width: 180px;
       display:inline-block;
       z-index:100;
       margin: 10px;
-      background:transparent url(img/mklogo-small.png) no-repeat 0 0;
+      background:transparent url(img/mklogo-small-transparent.png) no-repeat 0 0;
 
       }
 
@@ -843,13 +843,13 @@ input[type=button]:hover {
   top:40px;
   right:20px;
   z-index:2000;
-  font-size: 120%;
+  font-size: 150%;
   }
   .interactive-heading .nav a,
   .header .nav a {
     float:left;
     display:block;
-    font-family:Opensans,'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family:'Opensans','Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight:bold;
     margin-left:10px;
     -webkit-font-smoothing:subpixel-antialiased;
@@ -955,6 +955,8 @@ input[type=button]:hover {
 background: #000;
 height: 360px;
 position: relative;
+margin-top: 20px;
+margin-bottom: 20px;
 -webkit-box-shadow: 0 -2px 4px rgba(0,0,0,0.25);
 box-shadow: 0 -2px 4px rgba(0,0,0,0.25);
 }
@@ -1004,3 +1006,10 @@ box-shadow: 0 -2px 4px rgba(0,0,0,0.25);
             border-radius:0 3px 3px 0;
     }
 */
+
+#globals
+ {
+        background-color:rgba(0,0,0,0.25);
+        opacity:1;
+        }
+}
