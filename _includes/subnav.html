@@ -4,7 +4,10 @@
     {% if item.section == page.category %}
       {% if item.count == 5 %}
         {% capture col_class %}col24{% endcapture %}
+      {% elsif item.count == 4 %}
+        {% capture col_class %}col3{% endcapture %}
       {% endif %}
+
     {% endif %}
   {% endfor %}
 
