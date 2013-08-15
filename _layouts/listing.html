@@ -8,14 +8,10 @@ layout: default
 
   {% for item in page.list %}
     <div class="clearfix col12">
-      <div class='col5'><img class="people-photo" src="{{item.photo}}" /></div>
-      <div class='col7'><strong>{{ item.name }}</strong>
+      <div class='col3'><img class="partner-photo" src="{{site.baseurl}}{{item.photo}}" /></div>
+      <div class='col9'><strong><a href="{{item.link}}">{{ item.name }}</a></strong>
       <br/>
-      {{ item.title }}
-      <br/>
-      <a href="http://twitter.com/{{ item.twitter}}">@{{ item.twitter }}</a>
-      <br/>
-      {{ item.bio }}
+      {{ item.description }}
       </div>
     </div>
   {% endfor %}

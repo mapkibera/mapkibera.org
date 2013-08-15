@@ -1,5 +1,20 @@
 ---
-  permalink: /theme/health
-  category: theme
-  layout: default
+permalink: /theme/health
+category: theme
+layout: default
+map:
+  -  id: data-coverage
+     zoom: 12
+     lat: -1.2875
+     lon: 36.8811
+     tileserver: http://t.groundtruth.in/map_kibera/
 ---
+
+<div class='section theme'>
+    <div class='description'>
+      <div class='title'>{{page.title}}</div>
+      Here's some details about the map content
+    </div>
+  <div class='map' id='data-coverage'>
+  </div>
+</div>
