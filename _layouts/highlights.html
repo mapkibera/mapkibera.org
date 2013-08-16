@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class='listing col12 pad4h'>
+  <div class='limiter'>
+  {{content}}
+
+  {% for item in page.highlights %}
+      <h2>{{item.publisher}}</h2> <h3><a href="{{item.link}}">{{item.title}}</a></h3>
+      {% if item.quote %}
+      <blockquote>{{item.quote}}</blockquote>
+      {% endif %}
+  {% endfor %}
+
+  {{page.postcontent}}
+  </div>
+</div>
+

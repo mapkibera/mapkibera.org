@@ -53,8 +53,6 @@ Because you do allot the space to go into tools (mapping, voice, video) here, it
 * Want a page with all the brands on one page, in squares, with logos.
 * Page under the Tools section??
 
-## Partners
-* remove Projects, it's covered by Partners
 
 ## Locations
 
