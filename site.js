@@ -47,8 +47,11 @@
 
     mapkibera.map = function(context) {
       var map = L.map(context.id).setView([parseFloat(context.lat), parseFloat(context.lon)], parseInt(context.zoom));
-      L.tileLayer(context.tileserver + '{z}/{x}/{y}.png', {
-      }).addTo(map);
+      var tileservers = context.tileserver.split(',');
+      for (var i=0; i< tileservers.length; i++) {  
+        L.tileLayer(tileservers[i] + '{z}/{x}/{y}.png', {
+        }).addTo(map);
+      }
       map.attributionControl.setPrefix(false).addAttribution("&copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors, Map Kibera");
     };
 
