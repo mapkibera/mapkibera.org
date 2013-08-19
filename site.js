@@ -53,6 +53,7 @@
         }).addTo(map);
       }
       map.attributionControl.setPrefix(false).addAttribution("&copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors, Map Kibera");
+      map.scrollWheelZoom.disable();
     };
 
 
