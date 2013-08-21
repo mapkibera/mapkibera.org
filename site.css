@@ -404,6 +404,7 @@ table {
 ------------------------------------------------------- */
 .col0    { float:left; width:04.1666%; }
 .col1    { float:left; width:08.3333%; }
+.col17   { float:left; width:14.2857%; } 
 .col2    { float:left; width:16.6666%; }
 .col24   { float:left; width:20%; }
 .col3    { float:left; width:25.0000%; }
