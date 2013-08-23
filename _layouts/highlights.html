@@ -2,18 +2,16 @@
 layout: default
 ---
 
-<div class='listing col12 pad4h'>
-  <div class='limiter'>
+<div class='listing col12 limiter'>
   {{content}}
 
   {% for item in page.highlights %}
-      <h2>{{item.publisher}}</h2> <h3><a href="{{item.link}}">{{item.title}}</a></h3>
+      {% if item.publisher %}<h2>{{item.publisher}}</h2>{% endif %} <h3><a href="{{item.link}}">{{item.title}}</a> {% if item.author %} by {{item.author}}{% endif %}</h3>
       {% if item.quote %}
       <blockquote>{{item.quote}}</blockquote>
       {% endif %}
   {% endfor %}
 
   {{page.postcontent}}
-  </div>
 </div>
 
