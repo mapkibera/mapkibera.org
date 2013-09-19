@@ -404,6 +404,7 @@ table {
 ------------------------------------------------------- */
 .col0    { float:left; width:04.1666%; }
 .col1    { float:left; width:08.3333%; }
+.col15   { float:left; width:12.5%; }
 .col17   { float:left; width:14.2857%; } 
 .col2    { float:left; width:16.6666%; }
 .col24   { float:left; width:20%; }
@@ -829,7 +830,9 @@ input[type=button]:hover {
       .header a.active {
         color:#0068ac;
         }
-
+    .header a.title-link {
+      color:#000;
+     }
     .interactive-heading .logo,
     .header .logo {
       top: 40px;
@@ -955,7 +958,14 @@ input[type=button]:hover {
   width: 128px;
   height: 128px;
 }
-
+.tool-logo {
+  width: 128px;
+  height: 128px;
+  border: 1px solid #cbc4b3;
+  vertical-align: middle;
+  white-space: wrap;
+  font-size: 12px;
+}
 
 /* MAP */
 
@@ -1024,6 +1034,10 @@ box-shadow: 0 -2px 4px rgba(0,0,0,0.25);
     border: 4px solid #cbc4b3;
     z-index: 10;
   }
+.section.tool {
+  height:200px;
+  position: relative;
+}
 /*
 .tabs {
   margin-bottom:40px;
