@@ -1,18 +1,20 @@
 ---
 permalink: /theme/imagery
-category: them
+category: theme
 layout: default
 map:
   -  id: data-coverage
-     zoom: 12
+     zoom: 13
      lat: -1.2875
      lon: 36.8811
-     tileserver: http://t.groundtruth.in/map_kibera/
+     tileserver: http://t.groundtruth.in/map_kibera/,http://dev.groundtruth.in/cgi-bin/tilecache-2.11/tilecache.cgi/1.0.0/kibera_july_2009/,http://dev.groundtruth.in/cgi-bin/tilecache-2.11/tilecache.cgi/1.0.0/kibera_feb_2009/,http://dev.groundtruth.in/cgi-bin/tilecache-2.11/tilecache.cgi/1.0.0/kibera_august_2008/,http://dev.groundtruth.in/cgi-bin/tilecache-2.11/tilecache.cgi/1.0.0/kibera_january_2008/,http://dev.groundtruth.in/cgi-bin/tilecache-2.11/tilecache.cgi/1.0.0/kibera_january_2007/,http://dev.groundtruth.in/cgi-bin/tilecache-2.11/tilecache.cgi/1.0.0/kibera_july_2006/,http://dev.groundtruth.in/cgi-bin/tilecache-2.11/tilecache.cgi/1.0.0/kibera_march_2006/,http://dev.groundtruth.in/cgi-bin/tilecache-2.11/tilecache.cgi/1.0.0/nairobi_1961/,http://dev.groundtruth.in/cgi-bin/tilecache-2.11/tilecache.cgi/1.0.0/mathare_2010/
+     layer_control: show
 ---
-
+<!-- July 2009, Feb 2009, Aug 2008, Jan 2008, Jan 2007, July 2006, March 2006, Nairobi 1961, Mathare  -->
 <div class='section theme'>
     <div class='description'>
       <div class='title'>{{page.title}}</div>
+      Select historic imagery of Kibera and Nairobi, upper right control. You may need to zoom in to see detail.
     </div>
   <div class='map' id='data-coverage'>
   </div>
