@@ -139,12 +139,15 @@ a {
        -o-transition:color 100ms;
           transition:color 100ms;
   }
-  a:hover {
+  a:hover, .header .nav a:hover {
     color:#197987;
     }
   a.active {
     color:#516066;
     }
+  .header .nav a.active {
+    color:#ffffff;
+   }
   .rss {
     color:#d4d7d9;
     }
