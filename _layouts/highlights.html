@@ -10,6 +10,9 @@ layout: default
       {% if item.quote %}
       <blockquote>{{item.quote}}</blockquote>
       {% endif %}
+      {% if item.photo %}
+        <img width="480" height="270" src="{{site.baseurl}}{{item.photo}}"/>
+      {% endif %}
   {% endfor %}
 
   {{page.postcontent}}
