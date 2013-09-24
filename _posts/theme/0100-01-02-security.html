@@ -4,7 +4,7 @@ category: theme
 layout: default
 map:
   -  id: data-coverage
-     zoom: 14
+     zoom: 13
      lat: -1.29014
      lon: 36.83584
      tileserver: http://t.groundtruth.in/map_kibera/,http://t.groundtruth.in/map_kibera_security/
@@ -13,7 +13,70 @@ map:
 <div class='section theme'>
     <div class='description'>
       <div class='title'>{{page.title}}</div>
-Zoom to see details of particular areas.
+<div class='map-legend'>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+		<li>
+			<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAIAAADAAbR1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0T///////8JWPfcAAACn0lEQVQ4y7VTz0syURS9mo7jQEa4CBWhCDUwAwsCCQUhCVpEMEiDQgWF0DLoPwhpUQtX1UCLIHHVQgVBMEZMF9FCAjfVpsDfRiSTodh7M9/CFoFifr/O6nHPu+fAPfdKRFEURRH+G6T9aWFT2BQ2X3Zfdl92S7VSrVQrk2WyTFY9VU/VgzRIgzR/ZXCbv83f5heZRWaRcZw4Thwn9rK9bC87FA6FQxHOhDPhTH8FWX+aKBJFomhbt63b1oU5YU6Yg0M4hEOBERiBGTYNm4ZNgAAB+kODN/SG3hDn5bycF7OYxSy4wAUurMVarF1QL6gX1D+EIPbF4+Xj5eOl4dpwbbj+3qXOqrPqbIpP8Sm+v4Lkhy1CgABxiEMcYmmWZunWVGuqNeUFL3iBxjSm8VBgKDAU+I2QBYtgESznyfPkeXLjdON04zRYDBaDRSJNpIk0paJUlOo+eB+8D96M34zfjB+7j93H7qa5aW6aBxrRg/XB+mDVH+mP9Efd/+U+uU/u23fuO/eddIWu0BUKU5jCXJyLc/FutR4G0Ww0G83KTXKT3NRtsKZcU64pDyIHkYMIsU1sE9udemAvsBfY61brMaKPmY+Zjxm0ilbR6ve60W/0G/1LK0srSyushtWwmvZZ+6x91mEb+Ua+kR8oA2hDG9oggghf4ZMJMkEmfBafxWeJvEZeI6/P88/zz/M9ugYy6KAOdah3nu4r95X7qjHbmG3MxvgYH+NhYPQ4NCJH5IjciGxENiKbfJ98n3xfnl6eXp72X/gv/BdUgSpQBSkv5aU8fMInfOIczuEcmSJTZKpbrccd1FV1VV31NPE08TQxujO6M7pDhagQFSpsFbYKWxKdRCfRQROa0PxqYIABRmvQGrSGsbuxu7G7Hwz+LX4BBUO5FCMBmjAAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTMtMDktMjRUMTI6NTc6MTUtMDQ6MDA0PgtnAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDEzLTA5LTI0VDEyOjU3OjE1LTA0OjAwRWOz2wAAAGN0RVh0c3ZnOmNvbW1lbnQAIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgcgt1lgAAAABJRU5ErkJggg==' /> Police
+		</li>
+		<li>
+			<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAIAAADAAbR1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0T///////8JWPfcAAAD8klEQVQ4y7WUS0gyaxzGRz30NTOGSmqWidQUpl2UFhUUSUWLKBdFRC4MjEi6EUktqk1Uiy5GWVEmEUVeoMumdt1AkS6E2gXKyIRKsCCoIAudGedb1ELxtDvnWb4/eJ735f9/XhJBEARBAP+byL8BrAKrwCqchJNwEtpeba+2V21RW9QWdYe6Q90x6Z30TnodCofCoUAP0UP08Deff6KPfBu+Dd/GiHBEOCI0aAwagyZgDBgDxoRAQiAhQKKSqCTq0+vT69NrTEpMSkyKXCKXyCV9/D5+H597z73n3kfYEWHyCXwCn6AqqyqrKgsSQ2JI3DTSNNI0YnVYHVaHCTEhJmT+Zv5m/sZitpgtZtWWaku1BdNgGkwrvy2/Lb/1MrwMLyPc8ycA5+AcnNNV21XbVQvNQrPQ7DRjmjHNCLqCrqArhIfwEF4/UD9QP5CP5+P5+Mfax9rHGibFpJhUV6or1ZVSWVQWldVW3VbdVo3aUTtqjwg4Xz1fPV9li9gitqhxsHGwcTDICXKCnJ9rKAkloZRb5Ba5pWCqYKpgyj/kH/IPfUNUjspRuepEdaI6ic+Jz4nPsdPtdDs9ImCOMkeZo0A70A60s9+/37/fT0RJoVfoFfrCz8LPws8vyZfkSxJOrWXWMmsZjMIojE6aJ82T5u/znyF7YA/sgekEnaATqa2pramt0cOHrbAVtsI22AbbKF6Kl+INp6nyVHmqnHnKPGWePkgfpA/SyC3SABpAAywBS8ASQANoAA1YABaAhXAL6iP1kfoIj8Pj8DjFQXFQHBH5nUAn0AnkArlALolGopFowDawDWz/9ABpQBqQhjfwDXwD3X/cf9x/ol+Ql5aXlpdWYigxlBjIl+RL8mU4dWe7s93ZL7wX3guPj/ARPhJRtKKjoqOiozh9nD5Ov0peJa+SA2eBs8DZNw21h9pD7XcZdxl3GR6lR+lRfg5/Dn8Of1O0Dq1D6ww8A8/AAxEQAZHizeLN4s2IHuDX+DV+3WPpsfRYwBlwBpzRXGmuNFeB0cBoYBSjYTSM1uxsdjY7K7FKrBJ7Z74z35moEBWiQi2gBbQAZIJMkKlzvHO8cxwbw8awsYgt+tbzyvPK80oNr4ZXw4sNxYZiQwqzwqww7x3vHe8dX2ReZF5kOg4cB46Dg+mD6YNppUwpU8pAG2gDbTKBTCAT+JJ9yb7kfylaRMzy8/Lzco+/x9/jZ++yd9m74Aq4Aq4kBZOCSUGukWvkGqF0KB1KZ9FZdBZdLVAL1ALfum/dtx7tRvrtN8Un8Al8wpXoSnQl2rpt3bZut9gtdouJRWKRWER0iA7RFfGKeEU8UYuoRdRCwSk4BY/2+TXgv9JfhKV3rs9mJVEAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTMtMDktMjRUMTM6MDA6MDctMDQ6MDAhFnRuAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDEzLTA5LTI0VDEzOjAwOjA3LTA0OjAwUEvM0gAAAGN0RVh0c3ZnOmNvbW1lbnQAIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgcgt1lgAAAABJRU5ErkJggg==' /> Danger
+		</li>
+		<li>
+			<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAIAAADAAbR1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0T///////8JWPfcAAADMUlEQVQ4y5WUP0g6fxjHzV//oCAKB88KpJaGaFEbpIyobOgPVtuV55JENEgEuSgNuQQW3XCLudRRkARFVpdDlohO0VDaIKU3dBdeIedR3p13eb/B71D09cf93p/tefO8Xzw8PB+FJFuUjtJRuhSewlO4VH4ypFTI1sH5wfnBufPUeeo8LaJFtIjK6foBKKwUVgoryXQynUwLm8KmsPndzRvyhrzhjXgj3ojSVmmrtPXH+FB8KD7SmXQmnXktvZZeSz8I38dJ5BK5RK57p3unewcmYRImxW1xW9wuuyExJIZEGIIhGPrq++r76ivXY8aYMWbsmeuZ65nzrfnWfGvfM38ARLtoF+1wAk7ACYPH4DF4okPRoeiQt8Xb4m2ZXJxcnFycqJ6onqj23HpuPbfPwefgc9CmtWltWpACKZB6b35vfm+uCPiDcYku0XW9fL18vWzSmXQmXVVtVW1V7Y/BGxQNioZ+vB/vx8Ot4dZwKzPMDDPDv9P+AijLpXFpXBo5a3QkHUlHUtJKWkn7O+efpbOls6Uzv8Vv8VtCTaGmUBODMziDoxAKodBL8CX4EvxvAH/MH/PHerferXejKlSFqm56b3pveus76jvqO6rpI/qIPoocRg4jh1lT1pQ11YzUjNSM8DRP87ScCbgn7ol7IgESIIGrmauZqxneztt5e2d7Z3tnu0JCJERC+Fl+lp9lQRZkQf6Bf+AfrA6rw+qQA5iemp6anuLuuXvunotzcS7O7rF77F5JWVKWlBV3EGbCTJhp62rrauuqFK32qr1q74V0IV1UvOS/AGKqmCqmshJWwkr4jX6j3zgaHY2ORoFxYBwYB1aBVWB1UD+oH9SfZE+yJ1lnzplz5pAUkkJS4pg4Jo5VBKTtaXvaXj4ZUAAFUMgX88V8sQAVoAKEXWKX2OWuZlezq8kTeSJPSLRESzSCIRiCqTPqjDoTwAJYAKsIID/JT/LT5/F5fB7qkXqkHr+7G40bjRuNZofZYXZwbs7Nuct1wSbYBFsACSABJO6P++N+WXfwW+vz6/Pr8wPKAeWAkt1n99l9OV3/4zc1W8wWs2XhbuFu4a4uUhepi8jp+hcillrCfXPquQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxMy0wOS0yNFQxMzowMDoyNC0wNDowMFLbaY4AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTMtMDktMjRUMTM6MDA6MjQtMDQ6MDAjhtEyAAAAY3RFWHRzdmc6Y29tbWVudAAgR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICByC3WWAAAAAElFTkSuQmCC' /> Street Light
+		</li>
+		<li>
+			<span style='background:#FEFAE8;'></span> Unofficial Settlement
+		</li>
+	</ul>
+</div>
+</div>
+ 
+<style>
+.map-legend {
+	background-color: rgba(36,36,36,0.9);
+	font: 10pt "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	width: 180px;
+}
+ 
+ 
+.map-legend .legend-scale ul {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	float: left;
+	list-style: none;
+}
+ 
+.map-legend .legend-scale ul li {
+	list-style: none;
+	margin-left: 0;
+	/* border-bottom: 1px solid #555; */
+}
+ 
+/* 
+.map-legend .legend-scale ul li:last-child {
+	border-bottom: 0;
+}
+ */
+ 
+.map-legend .legend-scale img {
+	vertical-align: middle;
+	padding: 1px;
+}
+ 
+.map-legend li span {
+	display: block;
+	float: left;
+	height: 16px;
+	width: 16px;
+	margin-right: 5px;
+	margin-left: 0;
+	border: 1px solid #999;
+}
+</style>
     </div>
   <div class='map' id='data-coverage'>
   </div>
