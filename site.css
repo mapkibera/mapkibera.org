@@ -1085,3 +1085,92 @@ box-shadow: 0 -2px 4px rgba(0,0,0,0.25);
  }
 .methods ol, .methods ul {  list-style:circle inside; padding-left: 20px  }
 
+
+.map-legend {
+	background-color: rgba(255,255,255,0.9); 
+	font: 10pt "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #516066;
+	width: 180px;
+}
+
+.map-legend .name {
+    padding: 0 0 2px 4px;
+    margin: 0 0 2px 0;
+    border-bottom: 2px solid #E8BA88;
+    /* line-height: 2em; */
+}
+
+.map-legend .map-title {
+	font-weight: normal;
+    font-size: 18pt;
+    line-height: 1em;
+    color:#404040;
+    z-index:10;
+    background: rgb(250,247,243);
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 19px;
+    font-size: 18pt;
+    font-weight: 800;
+    text-align: center;
+    color: #333;
+  }
+}
+
+.map-legend .subtitle {
+	font-weight: lighter;
+    font-size: 12pt;
+    padding-top: 6px;
+    line-height: 1em;
+}
+
+.map-legend .legend-scale ul {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+	float: left;
+	list-style: none;
+}
+
+.map-legend .legend-scale ul li {
+	list-style: none;
+	margin-left: 0;
+	/* border-bottom: 1px solid #555; */
+}
+
+/* 
+.map-legend .legend-scale ul li:last-child {
+	border-bottom: 0;
+}
+ */
+
+.map-legend .legend-scale img {
+	vertical-align: middle;
+	padding: 1px;
+}
+
+.map-legend li span {
+	display: block;
+	float: left;
+	height: 14px;
+	width: 16px;
+	margin-right: 5px;
+	margin-left: 0;
+	border: 1px solid #999;
+}
+
+.map-legend .clear {
+	clear: both;
+}
+
+#donate {
+width: 100%;
+color: #fff;
+background: #aaa;
+border-bottom-style: solid;
+border-bottom-color: #000000;
+border-bottom-width: 1px;
+font-size: 12px;
+display:none;
+}

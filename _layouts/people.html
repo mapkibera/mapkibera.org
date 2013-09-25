@@ -12,10 +12,10 @@ layout: default
       <br/>
       <strong>{{ item.name }}</strong>
       <br/>
-      {{ item.title }}
-      <br/>
-      <a href="http://twitter.com/{{ item.twitter}}">@{{ item.twitter }}</a>
-      <br/>
+      {% if item.title %}{{ item.title }}
+      <br/>{% endif %}
+      {% if item.twitter %}<a href="http://twitter.com/{{ item.twitter}}">@{{ item.twitter }}</a>
+      <br/>{% endif %}
       {{ item.bio }}
     </div>
   {% endfor %}

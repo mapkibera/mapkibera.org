@@ -11,10 +11,26 @@ map:
 ---
 
 <div class='section theme'>
-    <div class='description'>
-      <div class='title'>{{page.title}}</div>
-     Zoom to see details of particular areas.
-    </div>
+<div class='map-legend description'>
+<div class='name'>
+	<div class='map-title'>Health</div>
+	<!-- <div class='subtitle'>Tooltip Subtitle</div> -->
+</div>
+<div class='legend-scale'>
+	<ul class='legend-labels'>
+		<li>
+			<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAIAAADAAbR1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0T///////8JWPfcAAAC70lEQVQ4y5VTUSh7cRj9fnNvueQaT+s+mjUU2xSWsW7Z3q4sRbQnKYoHrTxpD1Ly4mFZEhvDLbVMy0q5UdbK3niYRYREV4lyR+7S7u7+D/Ow2uT+v8fTd875db7fgZyCETvFTrHzlDvlTrnoUHQoOvSx+bH5samEC0qWtnu3e7d7azI1mZoMaSNtpC2QCCQCCSVcDBTMvfHeeG98x9/xdzyPPEefo89RaIZmaP6D/JuzHJNjcuzIc+Q58hg5I2fkClmmc9O56fyg8aDxoFHakrakrf+OaL9jv2O/Q7OkWdIs/fY4dVqdVqdXR1dHV0flG/lGvlFkwHt5L+81DZuGTcNKAqQGqAFq4Iw+o89oRQYhR8gRcmCz2Cw2W0KPAQYY5EIu5AIKKKDy8EL5QvlCuaIjv9pf7a92aVKalCbziHPZuexctmqsGqvm8+Tz5PPk0fZoe7TVjdeN143jFtyCW1r8Lf4Wf7GaqhjCU3gKTxUitERLtDTWP9Y/1q/T6rQ67aHv0HfoswgWwSJMvE28Tbx1ObocXQ5FBiCBBFIh8F3/Xf9dH3AH3AG3N+gNeoN3wp1wJ8xT89Q8td663rremmEyTIYpFvurB1MwBVNpMk2mSS7JJblk3BA3xA1ZQ9aQNRyHj8PH4Syf5bP8oHPQOejEAQf8rx745/xz/rnCHd+Mb8Y389X31ffVt/iw+LD4QOgIHaHbCe2EdkJCXIgL8Zyck3NysVqpiC7hEi4Lgevp6+nr6YSYEBNidbI6WZ3s9nR7uj1lTBlTxlzsXuxe7L6MvIy8jJRQK/ZkWZZl2Z+PmD+7C3fhLkJNqAl1hbXCWmGtXKlcqVwhIkSEiBA0QRN00B60B+2KenBL3pK3ZHtte217rWpNtaZaQwxiEIPaUBtqQ2ZkRmakR3qkBx544Js2mjaaNq56rnquehT1QJvSprQpNsyG2XCsKlYVqxL3xD1xD7mRG7l/liIQgQj2hD1hT2a9WW/WN0ADNJRI6B9BbtF2wg4S2wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxMy0wOS0yNFQxODoxNzo1NS0wNDowMDryEDkAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTMtMDktMjRUMTg6MTc6NTUtMDQ6MDBLr6iFAAAAY3RFWHRzdmc6Y29tbWVudAAgR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICByC3WWAAAAAElFTkSuQmCC' /> Pharmacy
+		</li>
+		<li>
+			<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAIAAADAAbR1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0T///////8JWPfcAAACDklEQVQ4y7WUTahpURTH991OOUo4bvmaIB8jMXDMFEqRqZFQUgYyVEaKqamJUiYGDBQzkomvITMfp1OKwkDJAG2h9hvcetF7XLf3/Ier9V+/vdZerQ+MMcYYvE3wfaV/AEAIIYTWlXVlXVnhFV7hQ/gQPoRfIuAXlDFmjBmjqqPqqDrKpXKpXMY2sU1sc9lddpfdcy/xyiNYM2tmzXPb3Da3fUWmrqlr6rqqr+qrmsgROSL3yPsSABiBERjvInqgB3ogBEIgfG69A5zEJ/FJnNVmtVkt42N8jA8qoAIq+rV+rV+7zWRmzIyZRakoFaWgF3qhVxqRRqSReDKejCc/B5+Dz8Ff/mDVXXVXXQ2rYTXsS53dSMQT8US84Xg4Ho5va95vUQqkQAo4gAM4fgrACZzACeABHuB5OCIBLaAFtLvoLrqLY3pMj2kYgAEYYEbMiBmtm+vmuvmVSRWoAlUwlU1lUxm0QAu05Ef5UX6UTWQT2eSe/IcukUvkEkF+5Ed+1EAN1Aj5Qr6Q79Zld9qddufOsrPsLKiHeqh3tp1tZxtmMYvZb9aUyBN5Ik8A4nd7nBKnxCnd5sA93MM9aSANpIG0klbSCtqgDdrfbNEjSfwSv8TPp/gUn8JpnMZpKVfKlXI5VU6VU33u/Xjl2G11W91WtwgugosgJjGJSXlb3pa3FXVFXVH/D4B/0duv6S89glMDjWyhIQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxMy0wOS0yNFQxODoxNzo1NC0wNDowMJyFG40AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTMtMDktMjRUMTg6MTc6NTQtMDQ6MDDt2KMxAAAAY3RFWHRzdmc6Y29tbWVudAAgR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICByC3WWAAAAAElFTkSuQmCC' /> Hospital
+		</li>
+		<li>
+			<span style='background:#FEFAE8;'></span> Informal Settlement
+		</li>
+	</ul>
+</div>
+<div class = 'clear'></div>
+</div>
   <div class='map' id='data-coverage'>
   </div>
 </div>
