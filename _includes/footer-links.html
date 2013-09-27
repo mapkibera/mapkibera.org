@@ -2,7 +2,7 @@
   {% if item.category == include.category %}
     {% capture index_link %}/{{include.category}}{% endcapture %}
     {% if item.permalink != index_link %}
-      <a id="footer-{{item.permalink}}" href="{{site.baseurl}}/{{item.permalink}}">{{item.title}}</a>
+      <a id="footer-{{item.permalink}}" href="{{site.baseurl}}{{item.permalink}}">{{item.title}}</a>
     {% endif %}
   {% endif %}
 {% endfor %}
