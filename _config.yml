@@ -1,10 +1,10 @@
-baseurl: /starter
+baseurl: 
 permalink: pretty
 markdown: rdiscount
 prose:
   rooturl: '_posts'
-  siteurl: 'http://mikelmaron.github.io/starter/'
-  relativeLinks: 'http://mikelmaron.github.io/starter/links.jsonp'
+  siteurl: 'http://mapkibera.org/'
+  relativeLinks: 'http://mapkibera.org/links.jsonp'
   media: 'media'
   metadata:
     _posts:
