@@ -1,31 +1,17 @@
-# Header
-
-* doesn't semi-transparent background look ok?
-** overlaps with slide show buttons
-* decrease height?
-
 
 # Front Page
 
-* Slideshow: Choose better images ... need to be wide, but work with both crop on height or widgth. Certinaly, a better Map Distribution slide? Or screenshot of Voice of Kibera?
-* start with a different photo w.o map kibera logo
-* "Making the Invisible Visible"
-**  Map Kibera - Making the Invisible Visible
-     Citizen Journalism - Letting their Voices Be Heard
-     Engaging Nairobi and Kenya - Demanding to be seen
-     Work with us - We develop programs and train
-* The slide description text is not consistently easy to see against background.
-* Slide copy needs improvement.
-* give the header a dark bgcolor in slideshow? better text color?
-* Introductory Copy needs improvement
-* Page *could* end after slide show and welcome text
-* Slides *could* cycle automatically
-* Slide titles *could* be clickable
-* add map as a slide
+* rename mailing list from "Former Donors"
 
-* Citizen Mapping / Media buttons link to other pages, but where? A highlights page or Work. And then Programs would show all the brands.
+** Introductory Copy needs improvement
+** Page *could* end after slide show and welcome text
+** Slides *could* cycle automatically
+** Slide titles *could* be clickable
+** add map as a slide
 
-* make twitter more obvious
+** Citizen Mapping / Media buttons link to other pages, but where? A highlights page or Work. And then Programs would show all the brands.
+
+** make twitter more obvious
 
 5. I like that the "tools" in text immediately brings you to the tools section in "Our Work." Splitting into Mapping Voice and Media makes sense here. I also like that these buttons transport you to the relevant portion of the page and are the same for the locations page.
 
@@ -57,3 +43,4 @@ Because you do allot the space to go into tools (mapping, voice, video) here, it
 ## Locations
 
 Lead with map of all of them??
+Can have more details about the community
