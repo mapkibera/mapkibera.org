@@ -1,6 +1,5 @@
-baseurl: 
+baseurl:
 permalink: pretty
-markdown: rdiscount
 prose:
   rooturl: '_posts'
   siteurl: 'http://mapkibera.org/'
