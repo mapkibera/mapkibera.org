@@ -1,6 +1,6 @@
 <ul class='col12 pager-box pager-tour clearfix' id='nav'>
   {% capture col_class %}col2{% endcapture %}
-  {% for item in page.section-count %}
+  {% for item in layout.section-count %}
     {% if item.section == page.category %}
       {% if item.count == 5 %}
         {% capture col_class %}col24{% endcapture %}

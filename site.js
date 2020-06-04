@@ -46,7 +46,7 @@
     };
 
     mapkibera.map = function(context) {
-      if (context.mapbox_accessToken) {
+      if (context.mapbox_styleId) {
         mapkibera.mapbox_map(context);
       } else {
         mapkibera.leaflet_map(context);
@@ -55,27 +55,31 @@
 
    mapkibera.mapbox_map = function(context) {
 
-     mapboxgl.accessToken = context.mapbox_accessToken;
+     mapboxgl.accessToken = 'pk.eyJ1IjoibWFwa2liZXJhIiwiYSI6ImNrMWdxdmd0cTE3a3czY3Mxc3Z5NDdpZmMifQ.c-CWCSx8UzZFVEDlDSJmag';
      var map = new mapboxgl.Map({
          container: 'map',
-         style: 'mapbox://styles/mapkibera/ck1fidzbc29at1crte4b8k8mw',
-         zoom: 15,
-         center: [36.79164, -1.31234]
+         style: context.mapbox_styleId,
+         zoom: Number(context.zoom),
+         center: [Number(context.lon), Number(context.lat)]
      });
+     map.scrollZoom.disable();
+     map.addControl(new mapboxgl.NavigationControl());
 
-     var toggleableLayerIds = ['nairobi-composite-60s', 'january-2007', 'august-2008', 'july-2009', '2018'];
+     var toggleableLayerIds = context.mapbox_layerIds.split(',');
+     var toggleableLayerLabels = context.mapbox_layerLabels.split(',');
 
      for (var i = 0; i < toggleableLayerIds.length; i++) {
          var id = toggleableLayerIds[i];
+         var label = toggleableLayerLabels[i];
 
          var link = document.createElement('a');
          link.id = id;
          link.href = '#';
          link.className = '';
-         link.textContent = id;
+         link.textContent = label;
 
          link.onclick = function (e) {
-             var clickedLayer = this.textContent;
+             var clickedLayer = this.id;
              e.preventDefault();
              e.stopPropagation();
 
@@ -83,7 +87,10 @@
                  var opacity = clickedLayer === layerId ? 1 : 0;
                  var className = clickedLayer === layerId ? 'active' : '';
                  document.getElementById(layerId).className = className;
-                 map.setPaintProperty(layerId, 'raster-opacity', opacity);
+                 //map.setPaintProperty(layerId, 'raster-opacity', opacity);
+                 layerId.split(':').forEach((clickedId) => {
+                   map.setPaintProperty(clickedId, 'raster-opacity', opacity);
+                 });
              });
          };
 
