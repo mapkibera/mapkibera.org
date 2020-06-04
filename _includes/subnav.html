@@ -15,7 +15,7 @@
 
   {% for item in site.posts reversed %}
     {% if item.category == page.category %}
-      {% capture index_link %}/{{page.category}}{% endcapture %}
+      {% capture index_link %}/{{page.category}}/{% endcapture %}
       {% if item.permalink != index_link %}
         <li><a class='{{col_class}} onpage {% if page.permalink == item.permalink %}active{% endif %}' id='nav-{{ item.permalink }}' href='{{site.baseurl}}{{item.permalink}}'>{{ item.title }}</a></li>
       {% endif %}
